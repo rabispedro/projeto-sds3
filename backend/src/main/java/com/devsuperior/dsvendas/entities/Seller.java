@@ -7,7 +7,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -17,7 +16,7 @@ public class Seller {
 	@Id
 	@GeneratedValue(strategy= GenerationType.IDENTITY)
 	private Long id;
-	
+
 	private String name;
 	
 	@OneToMany(mappedBy="seller")
@@ -32,7 +31,7 @@ public class Seller {
 	}
 
 	public Long getId() {
-		return id;
+		return this.id;
 	}
 
 	public void setId(Long id) {
@@ -40,7 +39,7 @@ public class Seller {
 	}
 
 	public String getName() {
-		return name;
+		return this.name;
 	}
 
 	public void setName(String name) {
@@ -48,6 +47,6 @@ public class Seller {
 	}
 
 	public List<Sale> getSales() {
-		return sales;
-	} 
+		return this.sales;
+	}
 }

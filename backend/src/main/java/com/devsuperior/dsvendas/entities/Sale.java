@@ -39,7 +39,7 @@ public class Sale {
 	}
 
 	public Long getId() {
-		return id;
+		return this.id;
 	}
 
 	public void setId(Long id) {
@@ -47,7 +47,7 @@ public class Sale {
 	}
 
 	public Integer getVisited() {
-		return visited;
+		return this.visited;
 	}
 
 	public void setVisited(Integer visited) {
@@ -55,7 +55,7 @@ public class Sale {
 	}
 
 	public Integer getDeals() {
-		return deals;
+		return this.deals;
 	}
 
 	public void setDeals(Integer deals) {
@@ -63,7 +63,7 @@ public class Sale {
 	}
 
 	public Double getAmount() {
-		return amount;
+		return this.amount;
 	}
 
 	public void setAmount(Double amount) {
@@ -71,7 +71,7 @@ public class Sale {
 	}
 
 	public LocalDate getDate() {
-		return date;
+		return this.date;
 	}
 
 	public void setDate(LocalDate date) {
@@ -79,7 +79,7 @@ public class Sale {
 	}
 
 	public Seller getSeller() {
-		return seller;
+		return this.seller;
 	}
 
 	public void setSeller(Seller seller) {
