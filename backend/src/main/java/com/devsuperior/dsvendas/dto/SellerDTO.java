@@ -6,6 +6,7 @@ import com.devsuperior.dsvendas.entities.Seller;
 
 public class SellerDTO implements Serializable{
 	// private static final Long serialVersionUID = 1L;
+	
 	private Long id;
 	private String name;
 
