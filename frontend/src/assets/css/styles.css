@@ -30,3 +30,9 @@ html, body {
 .text-primary {
 	color: var(--color-primary) !important;
 }
+
+.paginacao {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
