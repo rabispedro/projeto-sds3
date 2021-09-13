@@ -11,16 +11,18 @@ public class SaleDTO {
 	private Integer visited;
 	private Double amount;
 	private LocalDate date;
+	private Integer deals;
 
 	private SellerDTO seller;
 
 	public SaleDTO(){
 	}
 
-	public SaleDTO(Long id, Integer visited, Double amount, LocalDate date, SellerDTO seller) {
+	public SaleDTO(Long id, Integer visited, Double amount, LocalDate date, Integer deals, SellerDTO seller) {
 		this.id = id;
 		this.visited = visited;
 		this.amount = amount;
+		this.deals = deals;
 		this.date = date;
 		this.seller = seller;
 	}
@@ -30,6 +32,7 @@ public class SaleDTO {
 		this.visited = entity.getVisited();
 		this.amount = entity.getAmount();
 		this.date = entity.getDate();
+		this.deals = entity.getDeals();
 		this.seller = new SellerDTO(entity.getSeller());
 	}
 
@@ -51,6 +54,14 @@ public class SaleDTO {
 
 	public Double getAmount() {
 		return this.amount;
+	}
+
+	public Integer getDeals() {
+		return deals;
+	}
+
+	public void setDeals(Integer deals) {
+		this.deals = deals;
 	}
 
 	public void setAmount(Double amount) {
